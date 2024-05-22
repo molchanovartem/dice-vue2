@@ -20,7 +20,7 @@
         :keep-alive="!!carousel"
         :text="i18nButton"
         @on-click="onClick"
-      >3434</main-button>
+      />
     </div>
   </div>
 </template>
