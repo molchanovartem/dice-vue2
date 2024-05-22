@@ -52,6 +52,12 @@ export type _GenerationListOptionsConfig = (
   | string
 )[];
 
+export type _GeneratioMainConfig = {
+  extends: 'main';
+
+  links: { text: string; href: string }[];
+};
+
 export type _GenerationPaywallPopup = {
   // telegram by default
   type?: 'web' | 'telegram';
@@ -128,6 +134,7 @@ type BootstrapPage<TCustom extends Record<string, unknown>> = {
   | _GenerationPaywallConfig
   | _GenerationPaywallSingleConfig
   | _GenerationPaywallRowConfig
+  | _GeneratioMainConfig
   | _GenerationSlideConfig
   | _GenerationFormConfig
   | { extends: keyof TCustom }

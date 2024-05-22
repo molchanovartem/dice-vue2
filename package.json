@@ -38,5 +38,9 @@
         "bot",
         "examples/*",
         "packages/*"
-    ]
+    ],
+    "dependencies": {
+        "cannon": "^0.6.2",
+        "three": "^0.164.1"
+    }
 }

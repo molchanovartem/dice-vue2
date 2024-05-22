@@ -22,6 +22,11 @@ export const predefinedPresets: DefinePresets = {
       (m) => m.PaywallSinglePreset
     )
   ),
+  main: defineAsyncComponent(() =>
+    import('@tok/generation/presets/main').then(
+      (m) => m.PaywallPreset
+    )
+  ),
   paywall_row: defineAsyncComponent(() =>
     import('@tok/generation/presets/paywall_row').then(
       (m) => m.PaywallRowPreset
