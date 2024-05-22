@@ -100,19 +100,13 @@ export default defineConfig({
       ],
     },
 
-
-
     {
       extends: 'main',
       path: '/main',
       links: [
         {
-          text: 'Privacy policy',
-          href: 'https://google.com',
-        },
-        {
-          text: 'Terms of use',
-          href: 'https://google.com',
+          text: 'created by Molchanov',
+          href: 'https://t.me/var_molchanov',
         },
       ],
     },

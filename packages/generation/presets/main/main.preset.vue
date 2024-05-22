@@ -1,6 +1,7 @@
 <template>
   <div id="diceRoller"></div>
 
+  <Link class="artemlink" text="created by Molchanov" href="https://t.me/var_molchanov" />
   <main id="diceRollerUI">
     <div class="top_field">
       <input
@@ -57,10 +58,12 @@
       <span id="result"></span>
     </div>
   </main>
+
 </template>
 
 <script setup>
 import { onMounted } from 'vue';
+import { Link } from '@tok/ui/components/Link';
 
 onMounted(() => {
       if (window.main && typeof window.main.init === 'function') {
@@ -72,6 +75,11 @@ onMounted(() => {
 </script>
 
 <style lang="scss">
+.artemlink {
+  color: white;
+  display: flex;
+  flex-direction: row-reverse;
+}
 * {
   box-sizing: border-box; /* padding and border are included in total width/height of all elements */
   margin: 0px;
@@ -154,12 +162,15 @@ header {
 #textInput {
   text-align: center;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
   color: rgba(0, 0, 0, 0.8);
   background-color: rgba(199, 199, 199, 0.7);
-  width: 500px;
+  width: calc(100% - 100px);
   text-overflow: ellipsis;
   padding: 0.2em;
+  margin-top: 10px;
+  margin-right: 30px;
+  margin-left: 30px;
   text-decoration: none;
 }
 
