@@ -30,12 +30,11 @@ export default defineConfig({
           shape: 'square',
           pagination: 'count',
           title: 'How to use',
-          description: '',
+          description: 'Enter a string of the form "1d20+2d6" for the roll:',
           textAlign: 'center',
           list: [
-            '<b>CSS styles</b>: extend primary colors from Telegram or set yours',
-            'Button text and actions (look down)',
-            'Use our carefully crafted <b>presets</b> or easily create your own',
+            '<b>1d20</b> is one 20-sided die.',
+            '<b>2d6</b> - two 6-sided cubes',
           ],
           button: {
             content: 'Go to Dice',
